@@ -1,24 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2dn-s4-x9l">
+                                <rect key="frame" x="16" y="59" width="393" height="760"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" id="zHv-VE-cIf">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="126.66666666666667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCR-4R-T5e">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="126.66666666666667"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" id="6Au-sF-moF">
+                                        <rect key="frame" x="0.0" y="126.66666666666666" width="393" height="126.66666666666666"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzi-Kw-fBr">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="126.66666666666667"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="AC"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tsY-5o-BN9">
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="+/-"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Y36-If-b4C">
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="%"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="JqA-84-3pe">
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="÷"/>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="vLe-fz-NTf"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eO-Q9-hbV">
+                                        <rect key="frame" x="0.0" y="253.33333333333329" width="393" height="126.66666666666666"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT9-y9-81i">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="126.66666666666667"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="7"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="B2w-Wb-f6Z">
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="8"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="hXj-Ow-URr">
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2ok-WU-Ilb">
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="*"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDc-9e-f9q">
+                                        <rect key="frame" x="0.0" y="380" width="393" height="126.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="DZf-RI-8sW">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="4"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KVW-xG-RvZ">
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KaL-Kt-t92">
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="6"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="bBq-YB-JuC">
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="-"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ug-Ib-Cd2">
+                                        <rect key="frame" x="0.0" y="506.66666666666669" width="393" height="126.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HbY-SA-q0e">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SnC-rs-6cE">
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="2"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="bhO-IU-iXl">
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="3"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rRF-xJ-lHE">
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="126.66666666666667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="+"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctu-Tk-qnS">
+                                        <rect key="frame" x="0.0" y="633.33333333333337" width="393" height="126.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0Y-lb-U4r">
+                                                <rect key="frame" x="0.0" y="0.0" width="233.33333333333334" height="126.66666666666667"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="0"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4b-do-jZm">
+                                                <rect key="frame" x="233.33333333333334" y="0.0" width="28.666666666666657" height="126.66666666666667"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="."/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACx-Tp-8bi">
+                                                <rect key="frame" x="262" y="0.0" width="131" height="126.66666666666667"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="="/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2dn-s4-x9l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="6eE-FQ-kcq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2dn-s4-x9l" secondAttribute="bottom" id="gJg-F2-YnH"/>
+                            <constraint firstItem="2dn-s4-x9l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jDx-9e-t19"/>
+                            <constraint firstItem="2dn-s4-x9l" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kYc-W7-w2X"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="allClearButton" destination="uzi-Kw-fBr" id="Lbn-Xv-wdC"/>
+                        <outlet property="calculatorAddButton" destination="rRF-xJ-lHE" id="hRh-Rc-5BR"/>
+                        <outlet property="decimalButton" destination="y4b-do-jZm" id="Et1-il-GWc"/>
+                        <outlet property="displayAnswer" destination="lCR-4R-T5e" id="nVf-wA-a85"/>
+                        <outlet property="divisionButton" destination="JqA-84-3pe" id="9UD-2E-nph"/>
+                        <outlet property="eightButton" destination="B2w-Wb-f6Z" id="NOg-TB-Cki"/>
+                        <outlet property="evalutionButton" destination="ACx-Tp-8bi" id="GB6-6W-rUC"/>
+                        <outlet property="fiveButton" destination="KVW-xG-RvZ" id="n5q-hU-Pvs"/>
+                        <outlet property="fourButton" destination="DZf-RI-8sW" id="2Ta-VH-28D"/>
+                        <outlet property="multiplicationButton" destination="2ok-WU-Ilb" id="v3B-V5-Pi4"/>
+                        <outlet property="nineButton" destination="hXj-Ow-URr" id="ugZ-kw-dsu"/>
+                        <outlet property="oneButton" destination="HbY-SA-q0e" id="7LU-0l-DCc"/>
+                        <outlet property="percentButton" destination="Y36-If-b4C" id="3eY-3f-SCm"/>
+                        <outlet property="plusMinus" destination="tsY-5o-BN9" id="dWl-7Y-bCZ"/>
+                        <outlet property="sevenButton" destination="WT9-y9-81i" id="5ea-Ef-JRT"/>
+                        <outlet property="sixButton" destination="KaL-Kt-t92" id="vIw-NX-zDh"/>
+                        <outlet property="subtractionButton" destination="bBq-YB-JuC" id="dk8-ff-foZ"/>
+                        <outlet property="threeButton" destination="bhO-IU-iXl" id="pgj-ex-CBI"/>
+                        <outlet property="twoButton" destination="SnC-rs-6cE" id="EaX-d8-3Bm"/>
+                        <outlet property="zeroButton" destination="X0Y-lb-U4r" id="xoU-pw-ems"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

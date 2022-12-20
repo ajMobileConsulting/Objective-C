@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50857D9D2941750D00C6BEA1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50857D9C2941750D00C6BEA1 /* MapKit.framework */; };
 		50FB6C55293ED376004C1D7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB6C54293ED376004C1D7C /* AppDelegate.m */; };
 		50FB6C58293ED376004C1D7C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB6C57293ED376004C1D7C /* SceneDelegate.m */; };
 		50FB6C5B293ED376004C1D7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB6C5A293ED376004C1D7C /* ViewController.m */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		50857D9C2941750D00C6BEA1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		50FB6C50293ED376004C1D7C /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FB6C53293ED376004C1D7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50FB6C54293ED376004C1D7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50857D9D2941750D00C6BEA1 /* MapKit.framework in Frameworks */,
 				50FB6C8A293EF3E9004C1D7C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +151,6 @@
 		50FB6C88293EF3E8004C1D7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50857D9C2941750D00C6BEA1 /* MapKit.framework */,
 				50FB6C89293EF3E9004C1D7C /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -469,6 +465,7 @@
 				DEVELOPMENT_TEAM = VFG48XB875;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -496,6 +493,7 @@
 				DEVELOPMENT_TEAM = VFG48XB875;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
